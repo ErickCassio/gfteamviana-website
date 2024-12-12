@@ -5,4 +5,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+.bebas-font {
+  font-family: "Bebas Neue", sans-serif;
 }
