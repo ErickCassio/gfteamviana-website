@@ -12,3 +12,15 @@ body {
 .bebas-font {
   font-family: "Bebas Neue", sans-serif;
 }
+
+.montserrat-font {
+  font-family: "Montserrat", serif;
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  all: unset;
+}
