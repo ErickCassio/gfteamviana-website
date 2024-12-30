@@ -4,6 +4,7 @@ import Home from "./pages/Home.tsx";
 import Gym from "./pages/Gym.tsx";
 import Classes from "./pages/Classes.tsx";
 import "./App.css";
+import Galery from "./pages/Galery.tsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <Gym/>
       <Classes/>
+      <Galery/>
     </div>
   );
 }

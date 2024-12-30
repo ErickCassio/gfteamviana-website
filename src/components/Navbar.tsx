@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import logo from "../images/logojj.png";
 
 // Define the Navbar component
@@ -27,11 +27,20 @@ function Navbar() {
               </a>
             </div>
             <div className="sm:hidden pe-4">
-              <button className="flex items-center justify-center h-full" onClick={() => setShowDiv(!showDiv)}>
+              <button
+                className="flex items-center justify-center h-full"
+                onClick={() => setShowDiv(!showDiv)}
+              >
                 <span className="material-symbols-outlined">menu</span>
               </button>
             </div>
-            <div className={showDiv ? "sm:hidden absolute right-4 flex flex-col top-16 px-2 pt-1 py-3 bg-white rounded-xl bebas-font text-xl" : "hidden"}>
+            <div
+              className={
+                showDiv
+                  ? "sm:hidden absolute right-4 flex flex-col top-16 px-2 pt-1 py-3 bg-white rounded-xl bebas-font text-xl"
+                  : "hidden"
+              }
+            >
               <a
                 href="#academia"
                 className="hover:underline hover:decoration-2 hover:text-black/70 px-3 pt-1 rounded-md"

@@ -24,3 +24,10 @@ body {
 a {
   all: unset;
 }
+
+.text-outline-black {
+  text-shadow: 1px 1px 0px black,
+    /* Borda à direita e para baixo */ -1px -1px 0px black,
+    /* Borda à esquerda e para cima */ 1px -1px 0px black,
+    /* Borda à direita e para cima */ -1px 1px 0px black; /* Borda à esquerda e para baixo */
+}
