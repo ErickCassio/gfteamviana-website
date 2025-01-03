@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import logo from "../images/logojj.png";
+import Form from "../components/Form.tsx";
 
 // Define the Navbar component
 function Navbar() {
   const [showDiv, setShowDiv] = useState<boolean>(false);
+  const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
 
   return (
     // Wrapper div for the navbar, positioned fixed at the top of the viewport
@@ -66,7 +68,10 @@ function Navbar() {
               </a>
 
               {/* Call-to-action button with hover and animation effects */}
-              <button className="hover:underline hover:decoration-2 hover:scale-105 duration-200 px-3 pt-0.5 rounded-lg bg-red-700 text-white">
+              <button
+                className="hover:underline hover:decoration-2 hover:scale-105 duration-200 px-3 pt-0.5 rounded-lg bg-red-700 text-white"
+                onClick={() => setIsFormVisible(!isFormVisible)}
+              >
                 Entre em Contato
               </button>
             </div>
@@ -97,12 +102,17 @@ function Navbar() {
               </a>
 
               {/* Call-to-action button with hover and animation effects */}
-              <button className="hover:underline hover:decoration-2 hover:scale-105 duration-200 px-3 pt-1 rounded-lg bg-red-700 text-white">
+              <button
+                className="hover:underline hover:decoration-2 hover:scale-105 duration-200 px-3 pt-1 rounded-lg bg-red-700 text-white"
+                onClick={() => setIsFormVisible(!isFormVisible)}
+              >
                 Entre em Contato
               </button>
             </div>
           </div>
         </div>
+        {/* Renderiza o Form se isFormVisible for true */}
+        {isFormVisible && <Form setIsFormVisible={setIsFormVisible} />}
       </nav>
     </div>
   );

@@ -31,3 +31,11 @@ a {
     /* Borda à esquerda e para cima */ 1px -1px 0px black,
     /* Borda à direita e para cima */ -1px 1px 0px black; /* Borda à esquerda e para baixo */
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Para IE e Edge */
+  scrollbar-width: none; /* Para Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e Opera */
+}
