@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import spaceImg from "../images/Gym/spaceImg.jpg";
 import battleImg from "../images/Gym/battleImg.png";
 import kidsImg from "../images/Gym/kidsImg.jpg";
+import Form from "../components/Form.tsx";
 
 function Gym() {
+  const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
+
   return (
     <div
       id="academia"
@@ -28,7 +31,10 @@ function Gym() {
           alunos aprendem técnicas de defesa pessoal, estratégias de combate e
           os princípios que tornam o Jiu-Jitsu a "Arte Suave".
         </p>
-        <button className="bebas-font text-2xl hover:underline hover:decoration-2 hover:scale-105 duration-200 px-3 pt-1.5 py-1 rounded-lg bg-red-700">
+        <button
+          className="bebas-font text-2xl hover:underline hover:decoration-2 hover:scale-105 duration-200 px-3 pt-1.5 py-1 rounded-lg bg-red-700"
+          onClick={() => setIsFormVisible(!isFormVisible)}
+        >
           Agende uma aula experimental
         </button>
       </div>
@@ -112,6 +118,8 @@ function Gym() {
           </div>
         </div>
       </div>
+      {/* Render the Form if isFormVisible is true */}
+      {isFormVisible && <Form setIsFormVisible={setIsFormVisible} />}
     </div>
   );
 }

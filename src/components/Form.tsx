@@ -25,7 +25,7 @@ function Form(props) {
     e.preventDefault();
 
     const whatsappNumber = "+351963089600";
-    const message = `Olá gostaria de fazer minha inscrição na GFTEAM Viana:\nNome: ${formData.nome}\nApelido: ${formData.surname}\nE-mail: ${formData.email}\nTelefone: ${formData.phone}`;
+    const message = `Olá gostaria de mais informações sobre a GFTEAM Viana:\nNome: ${formData.nome}\nApelido: ${formData.surname}\nE-mail: ${formData.email}\nTelefone: ${formData.phone}`;
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message

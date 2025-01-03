@@ -58,8 +58,10 @@ function Classes() {
         </div>
 
         <div className="hidden md:flex flex-row space-x-8 max-w-7xl">
-          <div className="flex-1 hover:bg-white hover:text-black"
-          onMouseEnter={() => setCurrentSlide(0)}>
+          <div
+            className="flex-1 hover:bg-white hover:text-black"
+            onMouseEnter={() => setCurrentSlide(0)}
+          >
             <hr className="mb-4 border-t-2 border-white w-full mx-auto" />
             <div className="px-4">
               <h2 className="text-4xl bebas-font pb-2">Kids</h2>
@@ -72,8 +74,10 @@ function Classes() {
               </p>
             </div>
           </div>
-          <div className="flex-1 hover:bg-white hover:text-black"
-          onMouseEnter={() => setCurrentSlide(1)}>
+          <div
+            className="flex-1 hover:bg-white hover:text-black"
+            onMouseEnter={() => setCurrentSlide(1)}
+          >
             <hr className="mb-4 border-t-2 border-white w-full mx-auto" />
             <div className="px-4">
               <h2 className="text-4xl bebas-font pb-2">Adultos</h2>
@@ -86,8 +90,10 @@ function Classes() {
               </p>
             </div>
           </div>
-          <div className="flex-1 hover:bg-white hover:text-black"
-          onMouseEnter={() => setCurrentSlide(2)}>
+          <div
+            className="flex-1 hover:bg-white hover:text-black"
+            onMouseEnter={() => setCurrentSlide(2)}
+          >
             <hr className="mb-4 border-t-2 border-white w-full mx-auto" />
             <div className="px-4">
               <h2 className="text-4xl bebas-font pb-2">No-Gi</h2>
